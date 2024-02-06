@@ -1,0 +1,9 @@
+Popis funkce návěstidla 2 - prog/next 3 - up 4 - down 5 - červená led 6 - zelená led 7 - první servo (horní rameno) 8 - druhé servo
+
+K tomu by se mohla ještě využívat vestavěná led na portu 13 A0 - vstup, nultý bit A1 - vstup - první bit Postup programování by mohl být:
+
+Stiskneš prog/next - cca 2 sec, skočíš do programovacího módu. Jednou blikne led 13, jako že nastavuješ první rameno. Rozsvítí se červená led (port 5) - jako že nastavuješ rameno v poloze stůj, tlačítkama up a down (3 a 4). Až se Ti poloha bude líbit, stikneš tlačítko prog/next a přesuneš se do nastavování polohy volno (šikmo, svítí zelená led, port 5). Nastavené proměnné se ukládaj pouze do paměti. Dalším stiknutím blikne dvakrát led 13, jako že se nastavuje druhé rameno a rozsvítí se červená led. Po nastavení poslední polohy stiskneš prog/next a začne rychle blikat led 13, jako že programování skončilo; stisknutím prog/next se nové hodnoty uloží. Pokud se člověku hodnoty nelíbí, stikne na arduinu reset a provede se reset - zůstanou předchozí hodnoty.
+
+Možné zjdnodušení: Program by mohl být stejný pro jedno i dvojramenné návěstidlo s tím, že v případě jednoramenného návěstidla by se prostě kroky 3 a 4 jen proskákaly.
+
+Kódy návěstí: 00 - stůj 01 - volno 11 - volno do odbočky (hýbou se obě ramena) 10 je neplatná kombinace, je to taky stůj Výše uvedené je v pořadí: 1. bit, 0. bit Jo, ještě jsem zapomněl: To první zmačknutí prog/next (vstup do programovacího módu) by mohlo být aktivní až teprve poté, co bude držené stisknuté třeba 2 sekundy, nebo tak nějak, prostě trochu déle.
