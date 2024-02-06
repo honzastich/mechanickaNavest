@@ -1,4 +1,4 @@
-y
+
 Popis funkce návěstidla 2 - prog/next 3 - up 4 - down 5 - červená led 6 - zelená led 7 - první servo (horní rameno) 8 - druhé servo
 
 K tomu by se mohla ještě využívat vestavěná led na portu 13 A0 - vstup, nultý bit A1 - vstup - první bit Postup programování by mohl být:
